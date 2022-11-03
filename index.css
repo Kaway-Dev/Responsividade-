@@ -1,0 +1,39 @@
+/* DESKTOP  - O CSS DO DESKTOP A GENTE FAZ NORMAL NO INICIO DO DOCUMENTO CSS. */
+body{
+    background: #009;
+    font-size: 14px;
+}
+
+
+
+/* EM - UNIDADE DE MEDIDA QUE PODE SER USADA PARA CELULAR
+    -EM, ELE OLHA O PAI PARA SE BASEAR, EXEMPLO DIV FONT:ZISE 20 PX E SE EU COLOCAR UM FILHO, EXEMPLO "P" FONT:SIZE 2em, DAI O EM FICA COM 40PX, UNIDADE RELATIVA AO QUE FOI APLICADO AO PAI.
+
+    REM - MAIS FÁCIL, NÃO OLHA PARA O ELEMENTO PAI. SÓ OLHA PARA O BODY
+*/
+div {
+    font-size: 20px;
+}
+
+p {
+    font-size: 2em;
+}
+
+
+
+
+/* AS MEDIA QUERIES COLOCAMOS NO FINAL DO DOCUMENTO */
+/* TABLET */
+@media screen and (min-width:601px) and (max-width: 1024px) {
+    body {
+        background: #090;
+    }
+}
+
+
+/* CELULAR */
+@media screen and (max-width:600px) {
+    body {
+        background: #900;
+    }
+}
